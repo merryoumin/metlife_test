@@ -1,0 +1,6 @@
+
+@media(min-width: 768px) {
+	.sorting-hat .sorting-hat__headline-left .headline-text{
+		font-size: 44px;
+	}
+}

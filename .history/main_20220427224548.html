@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe 팝업창 띄우기 소스</title>
+    <a href="#" onclick="fun_open()">aaaa</a>
+    <script language="javascript">
+        function fun_open(){
+               window.open("http://www.naver.com", 'win', 'width=400,height=150,top=0,left=0,scrollbars=no,resizable=no');
+        }
+    </script>
+    </head>
+    <iframe src="iframe.html" width="300" height="200" frameborder="1">
+  <body></body>
+</html>

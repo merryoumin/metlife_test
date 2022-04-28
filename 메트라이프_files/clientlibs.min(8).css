@@ -1,0 +1,90 @@
+.value-prop{position:relative}
+.value-prop .container-fluid{position:relative;overflow:hidden}
+.value-prop .value-prop__title{z-index:10;color:#000;margin-bottom:0}
+.value-prop .updatepipe{display:inline-flex;vertical-align:top;height:30px;border-left:1px solid #ccc;margin:0 5px;position:relative;top:-5px}
+.value-prop .value-prop__controls{text-align:right;right:0;display:none}
+.value-prop .value-prop__border{border-style:solid;border-image-source:linear-gradient(258deg,#a2cf42,#008edd);border-image-slice:1;margin-bottom:30px;border-width:0 0 2px 0}
+.value-prop .carousel-control svg{width:20px;height:20px;color:#0061a0;fill:#0061a0}
+.value-prop .carousel-control:hover svg{fill:#000}
+.value-prop .value-prop__item-container{margin-top:20px}
+.value-prop .value-prop__item-container .value-prop__item{position:relative;height:auto;display:flex;border-left:1px solid #d9d9d9;margin-bottom:50px}
+.value-prop .value-prop__item-container .value-prop__item:hover{color:#000;text-decoration:none}
+.value-prop .value-prop__item-container .value-prop__item:active,.value-prop .value-prop__item-container .value-prop__item:focus{color:#000;text-decoration:none}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__gradient{position:absolute;height:100%;width:100%}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__item__bg{background-repeat:no-repeat;background-size:cover;background-position:center center;display:flex;width:100%;padding:0 25px 25px 25px}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__item__bg img{width:60px;height:60px}
+.value-prop .value-prop__item-container .value-prop__item__content{margin-top:auto;align-self:baseline;z-index:1;color:#000;background:#fafafa;width:260px;max-width:300px;padding:20px;height:auto;min-height:100%}
+.value-prop .value-prop__item-container .value-prop__item-image-title{display:flex;padding-bottom:0;color:#000}
+.value-prop .icon-chevron-right{width:12px;height:12px;color:#007abc;fill:#007abc;margin-left:5px;position:relative}
+.value-prop .carousel-control{text-decoration:none;cursor:pointer}
+.value-prop .carousel-4-items .slick-list{width:auto;margin-right:-30px}
+.value-prop .no-image-content .carousel-4-items .slick-list{padding-left:0;width:auto;margin-right:-30px}
+.value-prop .no-image-content .value-prop__item .value-prop__item__content{padding:25px 35px 20px 30px}
+.value-prop .slick-track{display:flex;display:-ms-flexbox}
+.value-prop .value-prop__item-image-title p{margin-bottom:15px}
+.value-prop .content_section{display:none}
+.value-prop .value-prop__container{width:100%}
+.value-prop .value-prop__container a{color:#007abd;display:inline-flex;align-items:center}
+@media screen and (max-width:767px){.value-prop .stacked .slick-track{width:auto;transform:none !important}
+.value-prop .value-prop__item-container.value-prop__item__bg{padding:0 25px 25px 15px}
+.value-prop .stacked.value-prop__item-container .value-prop__item__bg{display:inline-block;width:18%;vertical-align:top;height:100%;padding:20px 25px 25px 5px}
+.value-prop .stacked.value-prop__item-container .value-prop__item__bg img{width:50px;height:57px}
+.value-prop .stacked.value-prop__item-container .value-prop__item__content{display:inline-block;width:80.66%;height:auto;max-width:100%}
+.value-prop .stacked.value-prop__item-container .value-prop__item__content.no-image-content{display:inline-block;width:390px;height:auto;max-width:100%;padding-left:15px;padding-right:15px}
+.value-prop .stacked.value-prop__item-container .value-prop__item{border-left:0;border-bottom:1px solid #d9d9d9;margin-bottom:0;height:auto;width:100%}
+.value-prop .stacked.value-prop__item-container{margin:0 auto}
+.value-prop .stacked.value-prop__item-container .value-prop__item__content{padding:25px 20px}
+.value-prop .stacked.value-prop__item-container .value-prop__item:last-child{border:0}
+.value-prop .stacked.value-prop__item-container .value-prop__item-image-title{padding-bottom:10px}
+.value-prop .no-carousel .value-prop__item{padding:0;width:auto}
+.value-prop .stacked .value-prop__item__content{min-height:auto}
+.value-prop .gradiant-div{height:0 !important}
+.value-prop .stacked .value-prop__item-image-title p{margin-bottom:5px}
+.value-prop .carousel-4-items .slick-list{margin-left:-3px}
+.value-prop .no-image-content .carousel-4-items.value-prop__item-container .value-prop__item{margin-bottom:0}
+.value-prop .no-image-content .carousel-4-items .slick-list{background:#fafafa;height:100%;padding:20px 0;padding-left:15px}
+.value-prop .no-image-content .carousel-4-items .value-prop__item .value-prop__item__content{padding:0 35px 0 30px}
+.value-prop .no-image-content .carousel-4-items.no-carousel .value-prop__item .value-prop__item__content{padding:0 15px 0 15px}
+.value-prop .no-image-content .stacked.carousel-4-items .value-prop__item .value-prop__item__content{padding:25px 15px 20px 15px}
+.value-prop .container-fluid{padding:0}
+.value-prop .slick-list{padding-left:15px}
+.value-prop .value-prop__item__description{font-size:14px;line-height:26px}
+.value-prop .value-prop__item-image-title{line-height:18px;letter-spacing:0}
+.value-prop .value-prop__item-container{margin-top:10px}
+.value-prop .no-image-content .stacked.value-prop__item-container .value-prop__item,.value-prop .stacked.value-prop__item-container .value-prop__item{border-bottom:0}
+.value-prop .stacked.value-prop__item-container .value-prop__item .horizantal-line{margin:0 15px;border-bottom:1px solid #d9d9d9;position:absolute;height:auto;bottom:0;width:90%}
+.value-prop .stacked.value-prop__item-container .value-prop__item:last-child .horizantal-line{border:0}
+}
+@media screen and (min-width:768px){.value-prop .value-prop__wrapper{padding-bottom:25px}
+.value-prop .value-prop__item .value-prop__item__content{width:243px;padding:25px 35px 0 30px;background:transparent}
+.value-prop .gradiant-div{width:100%;background:#fafafa;margin:0 auto;margin-left:0;position:absolute}
+.value-prop .no-carousel .value-prop__item{width:33%;float:left;height:100%;padding:0}
+.value-prop .no-image-content .no-carousel .value-prop__item{padding:0 15px}
+.value-prop .no-image-content .no-carousel .value-prop__item,.value-prop .no-image-content .value-prop__item{margin-top:30px;margin-bottom:0}
+.value-prop .no-carousel .value-prop__item .value-prop__item__content{width:auto;vertical-align:top}
+.value-prop .carousel-4-items .slick-list{width:auto}
+.value-prop .no-image-content .value-prop__item-container{padding-top:0;pading-bottom:0}
+.value-prop .no-image-content .value-prop__item .value-prop__item__content{padding:20px 35px 0 30px}
+.value-prop .no-image-content .no-carousel .value-prop__item .value-prop__item__content{padding:20px 35px 0 10px}
+.value-prop .value-prop__item-container .value-prop__item{margin-bottom:0}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__item__bg{padding:0 25px 10px 20px}
+.value-prop .value-prop__border{border-width:0 0 4px 0}
+.value-prop .value-prop__item-image-title p{margin-bottom:20px}
+.value-prop .no-image-content .carousel-4-items .slick-list{width:auto}
+.value-prop .no-image-content .value-prop__item-container{margin-top:0}
+.value-prop .value-prop__controls{right:-4px;position:relative;top:10px}
+}
+@media screen and (min-width:1024px){.value-prop .value-prop__item .value-prop__item__content{width:300px;padding:30px 35px 0 30px}
+.value-prop .no-image-content .value-prop__item .value-prop__item__content{padding:0 35px 0 30px}
+.value-prop .no-image-content .no-carousel .value-prop__item .value-prop__item__content{padding:0 35px 0 10px}
+.value-prop .no-carousel.value-prop__item-container{padding-right:0}
+.value-prop .carousel-4-items .slick-list{padding-left:0;width:auto}
+.value-prop .no-image-content .no-carousel .value-prop__item{margin-top:50px;margin-bottom:0}
+.value-prop .no-image-content .value-prop__item{margin-top:50px;margin-bottom:20px}
+.value-prop .value-prop__border{margin-right:9.33%}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__item__bg{padding:0 25px 15px 25px;position:relative;top:5px}
+}
+@media screen and (min-width:1300px){.value-prop .value-prop__item .value-prop__item__content{width:324px;max-width:420px;height:auto;padding:30px 20px 0 30px}
+.value-prop .no-image-content .value-prop__item .value-prop__item__content{margin:0}
+.value-prop .value-prop__item-container .value-prop__item .value-prop__item__bg{padding:0 25px 25px 25px}
+}

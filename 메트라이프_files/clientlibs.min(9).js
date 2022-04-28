@@ -1,0 +1,1 @@
+var SingleFeatureBreakerModule=function(){return{init:function(){$(".single-feature-story-breaker").find(".story-cta-button").on("click",function(a){AnalyticsModule.linkClick($(this).parents(".story-content").find(".story-headline").text().trim(),"Single Feature Story Breaker",$(this).text().trim())})}}}();SingleFeatureBreakerModule.init();

@@ -1,0 +1,36 @@
+<div class="content modal" id="iframeModal">
+  <div class="iframe modal-content">
+    <script>
+      document.domain = "metlife.co.kr";
+
+      function updateIFrame(height, id) {
+        var $iframe = $("iframe");
+        if (id) {
+          $iframe = $("#" + id);
+        }
+
+        $iframe.css("height", height);
+        $iframe.prev(".iframe-loading").css("height", height);
+        $iframe.prev(".iframe-loading").remove();
+      }
+
+      window.addEventListener("message", function (evt) {
+        if (event.origin.indexOf("") == 0) {
+          if (evt.data == "iFrmSuccess") {
+            window.scrollTo(0, 0);
+          }
+        }
+      });
+    </script>
+
+    <div class="iframe-container opt-pt0 opt-pb0">
+      <iframe
+        name="iframe"
+        id="iframe"
+        src="가입상담문의 - MetLife.html"
+        title="가입상담문의"
+        style="width: 800px; height: 1240px"
+      ></iframe>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+<div>
+  <style>
+    /* The Modal (background) */
+    .modal {
+      top: 0px !important;
+      left: 0px !important;
+      width: 100% !important;
+      height: 100% !important;
+      position: fixed !important;
+      visibility: visible;
+      display: block;
+      background-color: rgba(102, 102, 102, 0.4) !important;
+      z-index: 99999999 !important;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto; /* 15% from the top and centered */
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+      max-width: 720px;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <div
+    id="floatingBtn"
+    onclick="$('#iframeModal').show();"
+    style="
+      position: fixed;
+      right: 30px;
+      top: 200px;
+      z-index: 1000000;
+      background-color: lightgreen;
+    "
+  >
+    가입하기
+  </div>
+  <div class="content modal" id="iframeModal">
+    <div class="iframe modal-content">
+      <span class="close" onclick="$('#iframeModal').hide();">&times;</span>
+      <script>
+        document.domain = "metlife.co.kr";
+
+        function updateIFrame(height, id) {
+          var $iframe = $("iframe");
+          if (id) {
+            $iframe = $("#" + id);
+          }
+
+          $iframe.css("height", height);
+          $iframe.prev(".iframe-loading").css("height", height);
+          $iframe.prev(".iframe-loading").remove();
+        }
+
+        window.addEventListener("message", function (evt) {
+          if (event.origin.indexOf("") == 0) {
+            if (evt.data == "iFrmSuccess") {
+              window.scrollTo(0, 0);
+            }
+          }
+        });
+      </script>
+
+      <div class="iframe-container opt-pt0 opt-pb0">
+        <iframe
+          name="iframe"
+          id="iframe"
+          src="https://brand.metlife.co.kr/pd/prodItrd01/registerNtryCnslQustInfoChannel.do?isAem=true"
+          title="가입상담문의"
+          style="height: 1240px; width: 100%"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  $floatingBtn = $("#floatingBtn");
+  $iframeModal = $("#iframeModal");
+  $modalCloseBtn = $("#iframeModal .close");
+  $floatingBtn.on("click", function (e) {
+    // alert("123");
+    $iframeModal.show();
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  $modalCloseBtn.on("click", function (e) {
+    // alert("456");
+    $iframeModal.hide();
+  });
+  $("a[href='/customer-service/contact-us/request-consultation/']").on(
+    "click",
+    function (e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $("#iframeModal").show();
+    }
+  );
+</script>
